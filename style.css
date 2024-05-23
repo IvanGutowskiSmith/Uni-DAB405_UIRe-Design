@@ -6,3 +6,37 @@ body {
     color: navy;
     margin-left: 20px;
   }
+
+  flexContainer {
+    display: flex;
+    background: orange;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  header {
+    display: flex;
+    background: red;
+
+
+  }
+
+  headerItem {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+    align-items: center;
+
+
+  }
+
+  section {
+    display:flex;
+    flex-direction: row;
+    padding: 5px;
+    background: green;
+    justify-content: space-around;
+    border-color: aqua;
+    border-style:groove;
+  }
