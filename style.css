@@ -1,42 +1,53 @@
 body {
-    background-color: lightblue;
-  }
-  
-  h1 {
-    color: navy;
-    margin-left: 20px;
-  }
+  background-color: lightblue;
+}
 
-  flexContainer {
-    display: flex;
-    background: orange;
-    flex-direction: column;
-    padding: 10px;
-  }
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
 
-  header {
-    display: flex;
-    background: red;
+.flexContainer {
+  display: flex;
+  background: orange;
+  flex-direction: column; /* Set to column so I can order sections one beneath each other */ 
+  padding: 10px;
+}
 
+.header {
+  display: flex;
+  flex-direction: row; /* This could be removed as row is default, however left as is to show layout intention */ 
+  background: red;
+  justify-content: space-between; /* Conveniently this fits to each edge of the page, so is good for different screen sizes */
+  flex-wrap: wrap; /* Default is no wrap, many items crush together so this allows item wrap to next line */
+  gap: 1em; /* puts gaps around boxes */
+}
 
-  }
+.headerItem {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  background: aqua;
+  /* align-self: is used for specific items */
+}
 
-  headerItem {
-    display: flex;
-    padding: 10px;
-    margin: 10px;
-    background: aqua;
-    align-items: center;
+.contactDetailsItem {
+  display: flex;
+  flex-direction: column; /* Change main axis direction to vertical, to place phone number then opening times below */
+  align-items: center; 
+  background: yellow;
+}
 
+.navigationMenu {
+  display: flex;
+  background: pink;
+  justify-content: flex-end;
+  gap: 1.2em;
 
-  }
+}
 
-  section {
-    display:flex;
-    flex-direction: row;
-    padding: 5px;
-    background: green;
-    justify-content: space-around;
-    border-color: aqua;
-    border-style:groove;
-  }
+.item {
+  display: flex;
+  padding:20px;
+  background: green;
+}
