@@ -76,7 +76,7 @@ p1 {
 
 .left {
   display: flex;
-  flex: 1;
+  flex: 1; /* combination of flex commands to determine the ratio/number of parts available in that section vs other elements */
   flex-direction: column; /* items one beneath the other*/
   background-color: blanchedalmond;
   padding: 10px;
@@ -166,10 +166,34 @@ p1 {
   justify-content: space-around;
 }
 
+.saleItemDescription {
+  padding: 0.5em;
+}
+
 /* Events page */
 
 .eventBlock {
   display: flex;
-  flex-direction: column;
-
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgrey;
+  margin: 2em;
+  padding: 1em;
 }
+
+.eventTitle {
+  flex: 2; /* take 2/5ths of the space */
+  text-align: left;
+}
+
+.eventDate {
+  flex: 1;
+  text-align: center;
+}
+
+.eventAddToCalendar {
+  flex: 2;
+  text-align: right;
+}
+
