@@ -17,7 +17,7 @@ p1 {
   color: #292727;
 }
 
-/* Flex items */
+/* Homepage flex items */
 
 .flexContainer {
   display: flex;
@@ -51,8 +51,8 @@ p1 {
 .navigationMenu {
   display: flex;
   justify-content: flex-end;
-  font-weight: bold;
   font-size: 1.5em; /* using em is vital, as it is a ratio of the system's default font, therefore users with custom settings will have proportionally sized font rather than fixed pixels */
+  font-weight: bold;
   gap: 1.2em;
 }
 
@@ -66,9 +66,7 @@ p1 {
 
 .mainContentColumns {
   display: flex;
-  padding: 20px; /* Only added to make remit of this box more visibly clear */
-  background-color: blue;
-    gap: 1.5em;
+  justify-content: space-between;
 }
 
 .left {
@@ -76,7 +74,7 @@ p1 {
   flex: 1;
   flex-direction: column; /* items one beneath the other*/
   background-color: blanchedalmond;
-  padding: 120px;
+  padding: 10px;
   gap: 1.5em;
 }
 
@@ -93,4 +91,17 @@ p1 {
   display: flex;
   justify-content: center;
   background-color: azure;
+}
+
+/* For mobile responsive design, change layout when viewport is <100px wide */
+
+@media screen and (max-width: 1000px) {
+  .mainContentColumns {
+    flex-direction: column;
+  }
+  .navigationMenu {
+    flex-direction: column;
+    justify-content: center;
+  }
+
 }
