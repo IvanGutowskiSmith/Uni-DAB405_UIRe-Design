@@ -2,11 +2,16 @@ body {
   background-color: lightblue;
 }
 
+/* Fonts*/
 h1 {
-  color: navy;
+  color: #292727; /*Used an off black colour for easier readability */
   margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif; /* I understand that Arial will be used, if not present on the user's device it will then use Helvetica then sans-serif, for simplicity and compatibility I have not installed a font pack */
 }
 
+p1 {
+  color: red;
+}
 .flexContainer {
   display: flex;
   background: orange;
@@ -43,11 +48,43 @@ h1 {
   background: pink;
   justify-content: flex-end;
   gap: 1.2em;
-
 }
 
 .item {
   display: flex;
   padding:20px;
   background: green;
+}
+
+/* Main page items */
+
+.mainContentColumns {
+  display: flex;
+  padding: 20px; /* Only added to make remit of this box more visibly clear */
+  background-color: brown;
+    gap: 1.5em;
+}
+
+.left {
+  display: flex;
+  flex: 1;
+  flex-direction: column; /* items one beneath the other*/
+  background-color: blanchedalmond;
+  padding: 120px;
+  gap: 1.5em;
+}
+
+.right {
+  display: flex;
+  flex: 1;
+  flex-direction: column; /* items one beneath the other*/
+  background-color: blanchedalmond;
+  padding: 120px;
+  gap: 1.5em;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: azure;
 }
