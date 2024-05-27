@@ -1,20 +1,26 @@
+/* Brand colours: Red: #C61331 | Background: #EFEFEF | Text: #292727 */
+
+
 body {
-  background-color: lightblue;
+  background-color: #EFEFEF;
+  font-family: Arial, Helvetica, sans-serif; /* Font set there to globally impact all font on page, I understand that Arial will be used, if not present on the user's device it will then use Helvetica then sans-serif, for simplicity and compatibility I have not installed a font pack */
+
 }
 
 /* Fonts*/
 h1 {
   color: #292727; /*Used an off black colour for easier readability */
   margin-left: 20px;
-  font-family: Arial, Helvetica, sans-serif; /* I understand that Arial will be used, if not present on the user's device it will then use Helvetica then sans-serif, for simplicity and compatibility I have not installed a font pack */
 }
 
 p1 {
-  color: red;
+  color: #292727;
 }
+
+/* Flex items */
+
 .flexContainer {
   display: flex;
-  background: orange;
   flex-direction: column; /* Set to column so I can order sections one beneath each other */ 
   padding: 10px;
 }
@@ -22,7 +28,8 @@ p1 {
 .header {
   display: flex;
   flex-direction: row; /* This could be removed as row is default, however left as is to show layout intention */ 
-  background: red;
+  background: #EFEFEF; /* Colour picked from original site for consistent branding */
+  
   justify-content: space-between; /* Conveniently this fits to each edge of the page, so is good for different screen sizes */
   flex-wrap: wrap; /* Default is no wrap, many items crush together so this allows item wrap to next line */
   gap: 1em; /* puts gaps around boxes */
@@ -32,7 +39,6 @@ p1 {
   display: flex;
   padding: 10px;
   margin: 10px;
-  background: aqua;
   /* align-self: is used for specific items */
 }
 
@@ -40,20 +46,20 @@ p1 {
   display: flex;
   flex-direction: column; /* Change main axis direction to vertical, to place phone number then opening times below */
   align-items: center; 
-  background: yellow;
 }
 
 .navigationMenu {
   display: flex;
-  background: pink;
   justify-content: flex-end;
+  font-weight: bold;
+  font-size: 1.5em; /* using em is vital, as it is a ratio of the system's default font, therefore users with custom settings will have proportionally sized font rather than fixed pixels */
   gap: 1.2em;
 }
 
 .item {
   display: flex;
   padding:20px;
-  background: green;
+  background: #C61331;
 }
 
 /* Main page items */
@@ -61,7 +67,7 @@ p1 {
 .mainContentColumns {
   display: flex;
   padding: 20px; /* Only added to make remit of this box more visibly clear */
-  background-color: brown;
+  background-color: blue;
     gap: 1.5em;
 }
 
