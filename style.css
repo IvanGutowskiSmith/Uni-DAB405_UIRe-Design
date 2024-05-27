@@ -29,7 +29,6 @@ p1 {
   display: flex;
   flex-direction: row; /* This could be removed as row is default, however left as is to show layout intention */ 
   background: #EFEFEF; /* Colour picked from original site for consistent branding */
-  
   justify-content: space-between; /* Conveniently this fits to each edge of the page, so is good for different screen sizes */
   flex-wrap: wrap; /* Default is no wrap, many items crush together so this allows item wrap to next line */
   gap: 1em; /* puts gaps around boxes */
@@ -52,7 +51,7 @@ p1 {
   display: flex;
   justify-content: flex-end;
   font-size: 1.5em; /* using em is vital, as it is a ratio of the system's default font, therefore users with custom settings will have proportionally sized font rather than fixed pixels */
-  font-weight: bold;
+  font-weight: lighter;
   gap: 1.2em;
 }
 
@@ -62,7 +61,7 @@ p1 {
   background: #C61331;
 }
 
-/* Main page items */
+/* Homepage page items */
 
 .mainContentColumns {
   display: flex;
@@ -90,7 +89,7 @@ p1 {
 .footer {
   display: flex;
   justify-content: center;
-  background-color: azure;
+  background-color: lightgray;
 }
 
 /* For mobile responsive design, change layout when viewport is <100px wide */
@@ -105,3 +104,40 @@ p1 {
   }
 
 }
+
+
+/* Parts Shop Items */
+.searchBoxRow {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  padding: 20px
+}
+
+.searchBox {
+  flex-grow: 1; /* Make the search box fill left side up to search button */
+  background-color: whitesmoke;
+  border: 1px groove #292727;
+  padding: 10px;
+}
+
+.searchButton {
+  background-color: #C61331;
+  border-radius: 1em
+
+}
+
+.saleItems {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  gap: 1.5em;
+}
+
+.saleItemAddToBasketBtn {
+  display: flex;
+  background-color: #C61331;
+  padding: 1em;
+  border-radius: 1em
+}
+
+/* Machinery For Sale Items */
