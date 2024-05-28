@@ -120,7 +120,7 @@ p1 {
 }
 
 .searchButton {
-  background-color: #C61331;
+  background-color: lightcoral;
   border-radius: 1em;
   padding: 0.5em;
   margin: 1em;
@@ -141,7 +141,7 @@ p1 {
 
 .saleItemAddToBasketBtn {
   display: flex;
-  background-color: #C61331;
+  background-color: lightcoral;
   padding: 1em;
   border-radius: 1em;
 }
@@ -154,7 +154,7 @@ p1 {
 
 .filterButton {
   display: flex;
-  background-color: #C61331;
+  background-color: lightcoral;
   justify-content: space-around;
 }
 
