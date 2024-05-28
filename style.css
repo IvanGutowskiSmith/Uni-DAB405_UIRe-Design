@@ -1,15 +1,13 @@
 /* Brand colours: Red: #C61331 | Background: #EFEFEF | Text: #292727 */
 
-
 body {
   background-color: #EFEFEF;
   font-family: Arial, Helvetica, sans-serif; /* Font set there to globally impact all font on page, I understand that Arial will be used, if not present on the user's device it will then use Helvetica then sans-serif, for simplicity and compatibility I have not installed a font pack */
-
 }
 
-/* Fonts*/
+/* Fonts */
 h1 {
-  color: #292727; /*Used an off black colour for easier readability */
+  color: #292727; /* Used an off black colour for easier readability */
   margin-left: 20px;
 }
 
@@ -24,20 +22,19 @@ p1 {
 }
 
 /* Homepage flex items */
-
 .flexContainer {
   display: flex;
-  flex-direction: column; /* Set to column so I can order sections one beneath each other */ 
+  flex-direction: column; /* Set to column so I can order sections one beneath each other */
   padding: 10px;
 }
 
 .header {
   display: flex;
-  flex-direction: row; /* This could be removed as row is default, however left as is to show layout intention */ 
+  flex-direction: row; /* This could be removed as row is default, however left as is to show layout intention */
   background: #EFEFEF; /* Colour picked from original site for consistent branding */
   justify-content: space-between; /* Conveniently this fits to each edge of the page, so is good for different screen sizes */
   flex-wrap: wrap; /* Default is no wrap, many items crush together so this allows item wrap to next line */
-  gap: 1em; /* puts gaps around boxes */
+  gap: 1em; /* Puts gaps around boxes */
 }
 
 .headerItem {
@@ -50,25 +47,24 @@ p1 {
 .contactDetailsItem {
   display: flex;
   flex-direction: column; /* Change main axis direction to vertical, to place phone number then opening times below */
-  align-items: center; 
+  align-items: center;
 }
 
 .navigationMenu {
   display: flex;
   justify-content: flex-end;
-  font-size: 1.5em; /* using em is vital, as it is a ratio of the system's default font, therefore users with custom settings will have proportionally sized font rather than fixed pixels */
+  font-size: 1.5em; /* Using em is vital, as it is a ratio of the system's default font, therefore users with custom settings will have proportionally sized font rather than fixed pixels */
   font-weight: lighter;
   gap: 1.2em;
 }
 
 .item {
   display: flex;
-  padding:20px;
-  background: #C61331;
+  padding: 20px;
+  background: lightcoral;
 }
 
 /* Homepage page items */
-
 .mainContentColumns {
   display: flex;
   justify-content: space-between;
@@ -76,8 +72,8 @@ p1 {
 
 .left {
   display: flex;
-  flex: 1; /* combination of flex commands to determine the ratio/number of parts available in that section vs other elements */
-  flex-direction: column; /* items one beneath the other*/
+  flex: 1; /* Combination of flex commands to determine the ratio/number of parts available in that section vs other elements */
+  flex-direction: column; /* Items one beneath the other */
   background-color: blanchedalmond;
   padding: 10px;
   gap: 1.5em;
@@ -99,7 +95,6 @@ p1 {
 }
 
 /* For mobile responsive design, change layout when viewport is <100px wide */
-
 @media (max-width: 1000px) {
   .mainContentColumns {
     flex-direction: column;
@@ -108,15 +103,13 @@ p1 {
     flex-direction: column;
     justify-content: center;
   }
-
 }
-
 
 /* Parts Shop Items */
 .searchBoxRow {
   display: flex;
   align-items: center; /* Vertically center the content */
-  padding: 20px
+  padding: 20px;
 }
 
 .searchBox {
@@ -131,7 +124,6 @@ p1 {
   border-radius: 1em;
   padding: 0.5em;
   margin: 1em;
-
 }
 
 .saleItems {
@@ -151,7 +143,7 @@ p1 {
   display: flex;
   background-color: #C61331;
   padding: 1em;
-  border-radius: 1em
+  border-radius: 1em;
 }
 
 /* Machinery For Sale Items */
@@ -171,7 +163,6 @@ p1 {
 }
 
 /* Events page */
-
 .eventBlock {
   display: flex;
   flex-direction: row;
@@ -183,7 +174,7 @@ p1 {
 }
 
 .eventTitle {
-  flex: 2; /* take 2/5ths of the space */
+  flex: 2; /* Take 2/5ths of the space */
   text-align: left;
 }
 
@@ -197,3 +188,10 @@ p1 {
   text-align: right;
 }
 
+.eventLocationMap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: lightgrey;
+  border-style: double;
+}
